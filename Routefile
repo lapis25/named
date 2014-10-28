@@ -1,0 +1,56 @@
+hosted_zone "karuborn.net." do
+  rrset "karuborn.net.", "A" do
+    ttl 300
+    resource_records(
+      "202.181.99.78"
+    )
+  end
+
+  rrset "karuborn.net.", "MX" do
+    ttl 300
+    resource_records(
+      "1 ASPMX.L.GOOGLE.COM.",
+      "5 ALT1.ASPMX.L.GOOGLE.COM.",
+      "5 ALT2.ASPMX.L.GOOGLE.COM.",
+      "10 ASPMX2.GOOGLEMAIL.COM.",
+      "10 ASPMX3.GOOGLEMAIL.COM.",
+      "10 ASPMX4.GOOGLEMAIL.COM.",
+      "10 ASPMX5.GOOGLEMAIL.COM."
+    )
+  end
+
+  rrset "calendar.karuborn.net.", "CNAME" do
+    ttl 300
+    resource_records(
+      "ghs.google.com."
+    )
+  end
+
+  rrset "docs.karuborn.net.", "CNAME" do
+    ttl 300
+    resource_records(
+      "ghs.google.com."
+    )
+  end
+
+  rrset "info.karuborn.net.", "CNAME" do
+    ttl 300
+    resource_records(
+      "ghs.google.com."
+    )
+  end
+
+  rrset "mail.karuborn.net.", "CNAME" do
+    ttl 300
+    resource_records(
+      "ghs.google.com."
+    )
+  end
+
+  rrset "sites.karuborn.net.", "CNAME" do
+    ttl 300
+    resource_records(
+      "ghs.google.com."
+    )
+  end
+end
